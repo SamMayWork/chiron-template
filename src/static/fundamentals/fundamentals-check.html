@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Quiz</title>
+</head>
+<body>
+  <h1>Fundamentals Quiz</h1>
+  <div class="question" id="1">
+    <p>What is a container?</p>
+    <ul class="answers">
+      <li><button>A way of shipping goods around the world</button></li>
+      <li><button class="correct">The runtime of an application bundled with the application source</button></li>
+      <li><button>A way of testing application source code</button></li>
+      <li><button>The developers computer</button></li>
+    </ul>
+  </div>
+  <div class="question" id="2">
+    <p>What are some key principles of Kubernetes?</p>
+    <ul class="answers">
+      <li><button class="correct">Declarative Deployment, Containerisation, PaaS</button></li>
+      <li><button>Write once run anywhere, Small File Sizes, Portability</button></li>
+      <li><button>Reduced human errors, Improved automation, Version control</button></li>
+      <li><button>Ease of use, Security, Java-Based</button></li>
+    </ul>
+  </div>
+  <div class="question" id="3">
+    <p>A Cluster is made up of one or many...</p>
+    <ul class="answers">
+      <li><button>Pods</button></li>
+      <li><button>Replicasets</button></li>
+      <li><button>Deployments</button></li>
+      <li><button class="correct">Nodes</button></li>
+    </ul>
+  </div>
+  <div class="question" id="4">
+    <p>Which answer most correlates to how deployments, pods, and Replicasets are laid out</p>
+    <ul class="answers">
+      <li><button>Pods > Deployments > Replicasets</button></li>
+      <li><button>Replicasets > Deployments > Pods </button></li>
+      <li><button class="correct">Deployments > Replicasets > Pods</button></li>
+      <li><button>Deployments > Pods > Replicasets</button></li>
+    </ul>
+  </div>
+  <div class="question" id="5">
+    <p>What is the key downside to hosting an application using traditional deployment?</p>
+    <ul class="answers">
+      <li><button>Scalability</button></li>
+      <li><button>It is very expensive compared the alternatives</button></li>
+      <li><button class="correct">The server must be maintained by yourselves</button></li>
+      <li><button>You might spill coffee on the machine</button></li>
+    </ul>
+  </div>
+  <button id="submit" data-redirect="https://sites.google.com/myport.ac.uk/891153-edcom/further">Submit Answers</button>
+  <script src="../answers.js"></script>
+</body>
+</html>

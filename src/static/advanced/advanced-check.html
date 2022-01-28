@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Quiz</title>
+</head>
+<body>
+  <h1>Fundamentals Quiz</h1>
+  <div class="question" id="1">
+    <p>What markdown language is used for declarative deployment?</p>
+    <ul class="answers">
+      <li><button>HTML</button></li>
+      <li><button class="correct">YAML</button></li>
+      <li><button>JSON</button></li>
+      <li><button>Markdown</button></li>
+    </ul>
+  </div>
+  <div class="question" id="2">
+    <p>What are the 3 key areas defined in a deployment document?</p>
+    <ul class="answers">
+      <li><button class="correct">Document Information, Spec, Metadata</button></li>
+      <li><button>API Version, Replicas, Image</button></li>
+      <li><button>Node Size, Autoscaling, Resource Limits</button></li>
+      <li><button>Jenkins, CI/CD, Container Ports</button></li>
+    </ul>
+  </div>
+  <div class="question" id="3">
+    <p>What command is run to apply a declarative document to a cluster</p>
+    <ul class="answers">
+      <li><button>kubectl apply document --filename=</button></li>
+      <li><button>kubectl document create --filename</button></li>
+      <li><button>kubectl apply prediction --no-file-name-needed</button></li>
+      <li><button class="correct">kubectl apply -f -filename-</button></li>
+    </ul>
+  </div>
+  <div class="question" id="4">
+    <p>What is the difference between a ConfigMap and a Secret?</p>
+    <ul class="answers">
+      <li><button>ConfigMaps take up significantly more storage</button></li>
+      <li><button>Secrets cannot be accessed through the CLI unlike ConfigMaps</button></li>
+      <li><button class="correct">Secrets have their content encoded and are encrypted at rest</button></li>
+      <li><button>Secrets are more confusing than ConfigMaps</button></li>
+    </ul>
+  </div>
+  <div class="question" id="5">
+    <p>Why might you want to use ConfigMaps?</p>
+    <ul class="answers">
+      <li><button>Scalability</button></li>
+      <li><button>Because they're simpler than secrets</button></li>
+      <li><button class="correct">To split out configuration from your containers</button></li>
+      <li><button>Because this tool told me to</button></li>
+    </ul>
+  </div>
+  <button id="submit" data-redirect="https://sites.google.com/myport.ac.uk/891153-edcom/further">Submit Answers</button>
+  <script src="../answers.js"></script>
+</body>
+</html>

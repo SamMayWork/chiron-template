@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Quiz</title>
+</head>
+<body>
+  <h1>Further Quiz - Command Line</h1>
+  <div class="question" id="1">
+    <p>Which of these is not a valid command when using kubectl?</p>
+    <ul class="answers">
+      <li><button class="correct">change</button></li>
+      <li><button>edit</button></li>
+      <li><button>get</button></li>
+      <li><button>describe</button></li>
+    </ul>
+  </div>
+  <div class="question" id="2">
+    <p>Which of these commands would you use to get the YAML manifest of a resource?</p>
+    <ul class="answers">
+      <li><button>describe</button></li>
+      <li><button class="correct">get</button></li>
+      <li><button>edit</button></li>
+      <li><button>logs</button></li>
+    </ul>
+  </div>
+  <div class="question" id="3">
+    <p>Which command could you run to retrieve only the name of pods?</p>
+    <ul class="answers">
+      <li><button class="correct">kubectl get pods | awk '{print $1}'</button></li>
+      <li><button>kubectl get pods --names-only</button></li>
+      <li><button>minikube get pods --names-only</button></li>
+      <li><button>minikubectl describe pods | grep names</button></li>
+    </ul>
+  </div>
+  <div class="question" id="4">
+    <p>How would you delete a running deployment called 'deployment-basics' using kubectl?</p>
+    <ul class="answers">
+      <li><button class="correct">kubectl delete deployment deployment-basics</button></li>
+      <li><button>kubectl remove deployment deployment-basics</button></li>
+      <li><button>kubectl deployment remove deployment-basics</button></li>
+      <li><button>kubectl deployment rm -rf deployment-basics --nuke-from-orbit</button></li>
+    </ul>
+  </div>
+  <div class="question" id="5">
+    <p>If you deleted a pod with a parent replicaset and deployment requiring 1 replica, what would happen?</p>
+    <ul class="answers">
+      <li><button>The pod would be removed and the application would crash as there would be no pods</button></li>
+      <li><button class="correct">Another pod would be started</button></li>
+      <li><button>An ops engineer would need to restart the cluster</button></li>
+      <li><button>The parent objects would be deleted also</button></li>
+    </ul>
+  </div>
+  <button id="submit" data-redirect="https://sites.google.com/myport.ac.uk/891153-edcom/further">Submit Answers</button>
+  <script src="../answers.js"></script>
+</body>
+</html>
