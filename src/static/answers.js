@@ -25,12 +25,12 @@ const submit = (e) => {
     correctCount += responses[response]
   })
 
-  alert(`You scored ${correctCount} out of 5, ${correctCount === 5 ? 'well done, sending you back to the tool!' : 'have another go!'}`)
+  alert(`You scored ${correctCount} out of 5, ${correctCount === 5 ? 'well done, sending you back to the tool!' : 'not quite right, review the content and have another go!'}`)
 
   if (correctCount === 5) {
-    window.location.replace(e.target.dataset.redirect)
+    window.location.replace(e.target.dataset.correctredirect)
   } else {
-    responses = {}
+    window.location.replace(e.target.dataset.wrongredirect)
   }
 }
 
